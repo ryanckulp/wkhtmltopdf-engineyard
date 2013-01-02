@@ -9,10 +9,10 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Brad Phelan", "Sebastian Maier"]
-  s.date = "2012-06-12"
+  s.date = "2013-01-01"
   s.description = "wkhtmltopdf binaries engine yard"
-  s.email = "info@im-concepts.de"
-  s.executables = ["wkhtmltopdf-linux-i386"]
+  s.email = "aprice@bettertheworld.com"
+  s.executables = ["wkhtmltopdf-i386"]
   s.extra_rdoc_files = [
     "LICENSE.txt",
     "README.mdown"
@@ -25,13 +25,13 @@ Gem::Specification.new do |s|
     "README.mdown",
     "Rakefile",
     "VERSION",
-    "bin/wkhtmltopdf-linux-i386",
+    "bin/wkhtmltopdf-i386",
     "lib/wkhtmltopdf-engineyard.rb",
     "test/helper.rb",
     "test/test_wkhtmltopdf_engineyard_and_osx_binaries.rb",
     "wkhtmltopdf-engineyard.gemspec"
   ]
-  s.homepage = "http://github.com/sebastianmaier/wkhtmltopdf-engineyard"
+  s.homepage = "http://github.com/BetterTheWorld/wkhtmltopdf-engineyard"
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
   s.rubygems_version = "1.8.15"

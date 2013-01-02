@@ -15,7 +15,7 @@ require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
   gem.name = "wkhtmltopdf-engineyard"
-  gem.homepage = "http://github.com/sebastianmaier/wkhtmltopdf-engineyard"
+  gem.homepage = "http://github.com/BetterTheWorld/wkhtmltopdf-engineyard"
   gem.license = "MIT"
   gem.summary = %Q{wkhtmltopdf binaries for engine yard}
   gem.description = %Q{wkhtmltopdf binaries engine yard}

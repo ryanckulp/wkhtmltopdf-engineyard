@@ -1,4 +1,6 @@
-WKHTMLTOPDF_PATH = File.expand_path "../../bin/wkhtmltopdf-i386", __FILE__
+# we will need to change this to always use the 64bit version when production gets upgraded
+binary_path = (Rails.env.production? ? "../../bin/wkhtmltopdf-i386" : "../../bin/wkhtmltopdf-amd64")
+WKHTMLTOPDF_PATH = File.expand_path binary_path, __FILE__
 
 begin
   require 'pdfkit'

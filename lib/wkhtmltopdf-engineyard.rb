@@ -1,5 +1,5 @@
-# we will need to change this to always use the 64bit version when production gets upgraded
-binary_path = (Rails.env.production? ? "../../bin/wkhtmltopdf-i386" : "../../bin/wkhtmltopdf-amd64")
+# staging uses 64bit, development and production use 32bit
+binary_path = (Rails.env.staging? ? "../../bin/wkhtmltopdf-amd64" : "../../bin/wkhtmltopdf-i386")
 WKHTMLTOPDF_PATH = File.expand_path binary_path, __FILE__
 
 begin

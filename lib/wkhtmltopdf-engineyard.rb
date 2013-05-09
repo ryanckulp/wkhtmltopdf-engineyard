@@ -1,5 +1,5 @@
-# staging uses 64bit, development and production use 32bit
-binary_path = (Rails.env.staging? ? "../../bin/wkhtmltopdf-amd64" : "../../bin/wkhtmltopdf-i386")
+# development uses 32 bit, production and staging are 64 bit
+binary_path = (Rails.env.development? ? "../../bin/wkhtmltopdf-i386" : "../../bin/wkhtmltopdf-amd64")
 WKHTMLTOPDF_PATH = File.expand_path binary_path, __FILE__
 
 begin
